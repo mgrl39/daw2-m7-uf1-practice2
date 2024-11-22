@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2 Gestión de Alumnos</title>
+    <!-- 22 de novembre de 2024  -->
+</head>
+
+<body style="background-color: #934993;">
+    <h1 style="text-align:center; color: #FFFFFF;">Gestión de estudiantes</h1>
+
+    <h2 style="color: #FFFFFF">Consulta SQL</h2>
+    <form action="AlumnoServlet" method="get">
+        <label for="sql" style="color: #FFFFFF;">Consulta</label>
+        <input id="sql" name="sql" required value="SELECT * FROM alumnos;">
+        <input type="submit" name="order" value="Ejecutar">
+    </form>
+
+    <h2 style="color: #FFFFFF">Agregar Alumno</h2>
+    <form action="AlumnoServlet" method="post">
+        <label for="id" style="color: #FFFFFF;"> ID Alumno</label>
+        <input type="number" name="id" required>
+        <label for="curso" style="color: #FFFFFF;">Curso:</label>
+        <input type="text" name="curso" required>
+        <label for="nombre" style="color: #FFFFFF;">Nombre:</label>
+        <input type="text" name="nombre" required>
+        <button type="submit">Agregar Alumno</button>
+    </form>
+</body>
+
+</html>
